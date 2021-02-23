@@ -1,0 +1,11 @@
+input {
+  margin: $base-space;
+  border: 1px solid $background-color;
+  color: $text-color;
+}
+.chart-content > input {
+  background: transparent;
+  color: black;
+  border: none;
+  text-align: right;
+}

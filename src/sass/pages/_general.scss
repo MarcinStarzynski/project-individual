@@ -1,0 +1,26 @@
+.general{
+  .chart-content {
+    p, input {
+      margin: auto (0.4*$base-space);
+      font-size: (0.7*$base-font-size);
+    }
+    input {
+      &:focus {
+        border: none;
+      }
+      align-self: flex-end;
+    }
+    display: flex;
+    flex-direction: row;
+    margin: 0 $base-space;
+    padding: 0;
+    border-bottom: 1px solid $text-color;
+  }
+  img {
+    max-width: 100%;
+    margin: $base-space auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

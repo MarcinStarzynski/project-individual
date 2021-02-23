@@ -1,0 +1,7 @@
+.section-title {
+  @include title;
+  width: 100%;
+  border-bottom: 1px solid $text-color;
+  margin: 0;
+  padding: (0.5*$base-space);
+}

@@ -1,0 +1,28 @@
+.header {
+  .active {
+    display: block;
+  }
+  div {
+    &:hover {
+      background: $main-color;
+    }
+    border-bottom: 1px dotted $logo-color;
+    padding: (0.5*$base-space);
+  }
+  a {
+    &:hover {
+      background: transparent;
+    }
+    color: $shadow-color;
+    margin: auto 0;
+  }
+  i {
+    position: relative;
+    margin: auto 0;
+  }
+  padding: $base-space 0;
+  color: $shadow-color;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}

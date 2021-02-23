@@ -1,0 +1,67 @@
+@mixin title {
+  font-family: $font-title;
+  margin: $base-space;
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@mixin text {
+  font-family: $font-text;
+  color: $text-color;
+  margin: $base-space;
+  font-size: $base-font-size;
+  text-align: justify;
+}
+
+@mixin logo {
+  font-family: $font-logo;
+  color: $logo-color;
+  font-size: (3*$base-font-size);
+}
+
+@mixin list {
+  list-style-type: none;
+  padding: $base-space;
+}
+
+@mixin list-element {
+  margin: $base-space;
+  text-align: justify;
+}
+
+@mixin link {
+  &:hover {
+    color: $main-color;
+    background: $sidebar-active-color;
+  }
+  text-decoration: none;
+  color: $text-color;
+  margin: $base-space;
+}
+
+@mixin button {
+  display: block;
+  border: none;
+  padding: $base-space;
+  border-radius: 15%;
+  color: $logo-color;
+  height: 42px;
+  width: 42px;
+  background: $main-color;
+  text-align: center;
+  margin: (0.5*$base-space) auto;
+  font-family: $font-text;
+  font-size: $base-font-size;
+}
+
+@mixin restab($headings...){
+  $list: $headings;
+
+  @each $list-headings in $list {
+    $i: index($list, $list-headings);
+    tbody tr td:nth-of-type(#{$i}):before {
+      content: $list-headings;
+    }
+  }
+}

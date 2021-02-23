@@ -1,0 +1,30 @@
+.personal-data {
+  .data-field-name, .data-field-contact, .data-field-wallet, .data-field-private {
+    div {
+      width: 100%;
+    }
+    padding: (2*$base-space) 0;
+    border-bottom: 1px solid $text-color;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  input {
+    margin-top: 0;
+  }
+  label {
+    display: block;
+    font-family: $font-text;
+    color: $text-color;
+    font-weight: $text-thicc;
+    margin-bottom: (0.5*$base-space);
+  }
+  .button {
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-top: $base-space;
+  }
+  padding-bottom: $base-space;
+}

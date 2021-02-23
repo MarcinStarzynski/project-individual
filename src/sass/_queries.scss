@@ -1,0 +1,211 @@
+@media (max-width: 600px) {
+  .section-title {
+    text-align: right;
+  }
+  .details {
+    table {
+      tbody tr {
+        & td {
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:before {
+            position: absolute;
+            font-weight: $text-thicc;
+            width: 40%;
+            left: $base-space;
+            top: 0;
+            content: attr(data-th);
+          }
+          padding-left: 45%;
+          margin-bottom: $base-space;
+        }
+        &:last-of-type {
+          border: none;
+        }
+        height: auto;
+        padding: $base-space 0;
+        border-bottom: 1px solid $text-color;
+      }
+      *, tr, td, th {
+        display: block;
+        position: relative;
+      }
+      thead tr {
+        display: none;
+      }
+      max-width: 400px;
+      display: block;
+      position: relative;
+    }
+  }
+}
+@media (min-width: 600px) {
+  main {
+    margin-top: (4*$base-space);
+  }
+  article {
+    margin: 0 auto;
+  }
+  .links-list, .banners-list {
+    max-width: 500px;
+    margin: 0 auto !important;
+  }
+  .date-picker {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center !important;
+  }
+  .payout-table {
+    max-width: 500px;
+    margin: 0 auto !important;
+  }
+  .chart-inputs {
+    .chart-input {
+      width: 200px !important;
+      display: flex;
+      //margin: $base-space auto;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: $base-space auto !important;
+
+  }
+  .manager {
+    border-bottom: none !important;
+  }
+  .header {
+    a {
+      color: $sidebar-color;
+      font-size: (0.8*$base-font-size);
+      margin: auto $base-space;
+    }
+    div {
+      &:last-of-type {
+        border: none;
+      }
+      border-bottom: none;
+      border-right: 2px dotted $shadow-color ;
+      height: 100%;
+      margin: auto 0;
+      display: flex;
+    }
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    background: $logo-color;
+    color: $sidebar-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: (4*$base-space);
+    padding: 0;
+  }
+  .personal-data-article > form {
+    .data-field-name, .data-field-contact, .data-field-wallet, .data-field-private {
+      div {
+        label {
+          text-align: left;
+          width: 120px;
+        }
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        display: inline-flex;
+      }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .postback-article > form {
+    .postback-field-params {
+      p {
+        display: block;
+      }
+      .textareas {
+        & div {
+          width: 300px;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .selects {
+        & div {
+          width: 200px;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      display: flex;
+      flex-direction: column;
+    }
+    .postback-field-options {
+      & ul {
+        border: none;
+      }
+      .status-list, .hour-slider {
+        width: 400px;
+        border: none;
+        height: 120px;
+      }
+      & .status-list {
+        border-right: 1px solid $text-color;
+      }
+      display: flex;
+      border-top: 1px solid $text-color;
+      border-bottom: 1px solid $text-color;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  .pop-up {
+    .popup-section {
+      flex-direction: row;
+    }
+    form {
+      flex-direction: row;
+    }
+    .popup-section-wrapper {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+  .popup-banner {
+    .popup-section {
+      &:nth-of-type(2){
+        flex-direction: row;
+      }
+      &:last-of-type {
+        flex-direction: row;
+      }
+      flex-direction: column;
+    }
+  }
+}
+@media (min-width: 850px) {
+  main {
+    padding-left: 212px;
+    width: 100%;
+  }
+  .sidebar {
+    display: block;
+    z-index: 4;
+  }
+  .hide-button {
+    display: block;
+    left: 148px;
+    top: 24px;
+    z-index: 4;
+    color: $main-color;
+  }
+  .pop-up {
+    margin-left: (0.5*212px);
+  }
+}

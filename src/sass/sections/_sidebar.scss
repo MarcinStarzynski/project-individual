@@ -1,0 +1,92 @@
+.sidebar {
+  .logo{
+    color: $logo-color;
+    font-family: $font-logo;
+    font-size: (2*$base-font-size);
+    padding: (1.5*$base-space);
+    word-spacing: -6px;
+  }
+  .page-links{
+    ul{
+      li {
+        margin: auto (0.5*$base-space);
+      }
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      i {
+        font-size: $base-font-size;
+        margin: auto (1.5*$base-space);
+      }
+      display: flex;
+      align-items: center;
+      margin: 0;
+      justify-content: flex-start;
+      height: (4*$base-space);
+      text-decoration: none;
+      color: $shadow-color;
+    }
+    a:hover {
+      background: $main-color;
+    }
+    padding-left: 0;
+    padding-bottom: (2*$base-space);
+    border-bottom: 1px solid $logo-color;
+  }
+  .manager {
+    a {
+      font-size: (1.2*$base-font-size);
+      color: $main-color;
+    }
+    img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: $base-space;
+    }
+    .manager-img{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    padding-bottom: $base-space;
+    border-bottom: 1px solid $logo-color;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  overflow: auto;
+  background: $sidebar-color;
+  width: $sidebar-width;
+}
+
+.hide-button {
+  &:hover {
+    background: none;
+  }
+  position: fixed !important;
+  left: (13*$base-space);
+  top: (2*$base-space);
+  color: $shadow-color;
+  background: transparent;
+  border: none;
+  font-size: (2*$base-font-size);
+  z-index: 1;
+  }
+
+.hidden {
+  display: none;
+}
+
+.button-hidden {
+  position: absolute;
+  left: $base-space;
+  top: $base-space;
+  color: $sidebar-active-color;
+}

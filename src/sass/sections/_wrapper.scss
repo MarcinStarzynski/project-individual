@@ -1,0 +1,10 @@
+.wrapper {
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  background: $logo-color;
+  margin: 0 $base-space;
+  margin-bottom: $base-space;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 2px $shadow-color;
+}

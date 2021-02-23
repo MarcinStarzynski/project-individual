@@ -1,0 +1,99 @@
+/* flex columns */
+
+.col-1 {
+  width: 7.05%;
+}
+.col-2 {
+  width: 15.5%;
+}
+.col-3 {
+  width: 23.95%;
+}
+.col-4 {
+  width: 32.4%;
+}
+.col-5 {
+  width: 40.85%;
+}
+.col-6 {
+  width: 49.3%;
+}
+.col-7 {
+  width: 57.75%;
+}
+.col-8 {
+  width: 66.2%;
+}
+.col-9 {
+  width: 74.65%;
+}
+.col-10 {
+  width: 83.1%;
+}
+.col-11 {
+  width: 91.55%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* naked elements */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include title;
+}
+
+p {
+  @include text;
+}
+
+a{
+  @include link;
+}
+
+ul, ol {
+  @include text;
+  @include list;
+}
+
+li {
+  @include list-element;
+}
+
+.button {
+  @include button;
+}
+
+i {
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+body {
+  background: $background-color;
+}
+
+main {
+  background: $background-color;
+  padding: $base-space 0;
+  font-size: (0.7*$base-font-size);
+}
+
+.overlay-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background: $shadow-color;
+}
+
+.overlay {
+  opacity: 0.5;
+  display: block;
+}

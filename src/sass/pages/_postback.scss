@@ -1,0 +1,98 @@
+.postback {
+  .postback-field-params {
+    p {
+      color: #000000;
+      font-size: (0.7*$base-font-size);
+    }
+    label {
+      &:first-of-type {
+        margin-top: $base-space;
+      }
+      display: block;
+      text-align: center;
+      font-weight: $text-thicc;
+    }
+  }
+  textarea {
+    display: block;
+    color: $text-color;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    margin: (0.5*$base-space) auto;
+    resize: none;
+    outline: none;
+  }
+  button {
+    width: 100px;
+    border-radius: 5px;
+    padding: 0;
+    margin: $base-space auto 0 auto;
+  }
+  select {
+    display: block;
+    color: $text-color;
+    border: none;
+    border-radius: 5px;
+    margin: (0.5*$base-space) auto;
+    width: 50%;
+    outline: none;
+  }
+  .status-list{
+    .title {
+      span {
+        color: red;
+      }
+      font-weight: $text-thicc;
+      padding: $base-space;
+    }
+    ul {
+      li {
+        & label {
+          margin: auto;
+        }
+        & input {
+          margin: auto (0.5*$base-space);
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        height: (2*$base-space);
+        margin: 0;
+        padding: (0.2*$base-space);
+        font-size: (0.7*$base-font-size);
+      }
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      height: 100%;
+      border-bottom: 1px solid $text-color;
+    }
+    border-top: 1px solid $text-color;
+    text-align: center;
+    padding: $base-space (2*$base-space);
+    height: 100px;
+  }
+  .hour-slider {
+    .title {
+      display: block;
+      font-weight: $text-thicc;
+      padding: $base-space;
+    }
+    p {
+      margin: 0 auto $base-space auto;
+      text-align: center;
+      color: $main-color;
+    }
+    #hour-slider {
+      width: 90%;
+    }
+    text-align: center;
+    border-bottom: 1px solid $text-color;
+  }
+  font-family: $font-text;
+  color: $text-color;
+  padding-bottom: $base-space;
+
+}
